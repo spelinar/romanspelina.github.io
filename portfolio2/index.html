@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Title</title>
+</head>
+<body>
+<header id="header">
+    <a href="#" class="logo" onclick="toggle('home')">LOGO</a>
+    <ul>
+        <li><a href="#home"  class="active" onclick="toggle()">Home</a> </li>
+        <li><a href="#about" onclick="toggle()">About</a> </li>
+        <li><a href="#skils" onclick="toggle()">Skils</a> </li>
+        <li><a href="#project" onclick="toggle()">Project</a> </li>
+        <li><a href="#contact" onclick="toggle()">Contact</a> </li>
+    </ul>
+    <div class="toggle" onclick="toggle()"></div>
+</header>
+<section id="home">
+    <div>
+        <h2>responsywna strona internetowa</h2>
+        <p>Gowno prawda</p>
+        <a href="#about">Czytaj wiecej</a>
+    </div>
+   <img src="imaginedragons.jpg"> 
+</section>
+<section id="about">
+    <div>
+        <h2>O mnie</h2>
+        <p>Gowno prawda</p>
+        <a href="#">Czytaj wiecej</a>
+    </div>
+</section>
+<section id="skils">
+    <div>
+        <h2>cos tu ma byc kartynki</h2>
+        <p>Gowno prawda</p>
+    </div>
+</section>
+<section id="project">
+    <div>
+        <h2>projekty</h2>
+        <p>Gowno prawda</p>
+    </div>
+</section>
+<section id="contact">
+    <div>
+        <h2>contact</h2>
+        <p>Gowno prawda</p>
+    </div>
+</section>
+<script>
+    function toggle(){
+        var header = document.getElementById('header')
+        header.classList.toggle('active')
+    }
+</script>
+</body>
+</html>
